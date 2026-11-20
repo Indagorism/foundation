@@ -1,0 +1,44 @@
+---
+import Base from '../layouts/Base.astro';
+import Emblem from '../components/Emblem.astro';
+import { getFoundation } from '../lib/foundation';
+import { href } from '../lib/url';
+
+const f = await getFoundation();
+const pad = (n: number) => String(n).padStart(2, '0');
+---
+<Base>
+  <section class="hero">
+    <Emblem size={132} class="hero-emblem" />
+    <h1>{f.name}</h1>
+    <p class="definition" set:html={f.definitionHtml} />
+    <p class="hero-motto">{f.motto}</p>
+    <p class="edition">
+      <span>{f.document}</span>
+      <span>Version {f.version}</span>
+      <span>{f.dateLabel}</span>
+    </p>
+  </section>
+
+  <section id="contents" class="contents" aria-labelledby="contents-title">
+    <h2 id="contents-title" class="label">Contents</h2>
+    <ol class="toc">
+      {f.sections.map((s) => (
+        <li>
+          <a href={href(`${s.slug}/`)}>
+            <span class="num">{pad(s.number)}</span>
+            <span class="toc-body">
+              <span class="toc-title">{s.title}</span>
+              <span class="toc-summary" set:html={s.summaryHtml} />
+            </span>
+          </a>
+        </li>
+      ))}
+    </ol>
+    <p class="read-all">
+      <a href={href("document/")}>Read the whole document on one page →</a>
+      <a href={href("indagorism.pdf")}>Download as PDF</a>
+      <a href={href("foundation.json")}>Data as JSON</a>
+    </p>
+  </section>
+</Base>

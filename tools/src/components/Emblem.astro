@@ -1,0 +1,40 @@
+---
+/**
+ * The emblem as described in 12-emblem.md: a point with an error
+ * bar (which also reads as the letter I) inside a ring of ten marks.
+ */
+interface Props {
+  size?: number | string;
+  title?: string;
+  class?: string;
+}
+const { size = 48, title = 'The emblem of Indagorism', class: className } = Astro.props;
+const ticks = Array.from({ length: 10 }, (_, i) => {
+  const a = ((i * 36 - 90) * Math.PI) / 180;
+  const r1 = 37;
+  const r2 = 46;
+  const f = (n: number) => n.toFixed(2);
+  return { x1: f(50 + r1 * Math.cos(a)), y1: f(50 + r1 * Math.sin(a)), x2: f(50 + r2 * Math.cos(a)), y2: f(50 + r2 * Math.sin(a)) };
+});
+---
+<svg
+  class:list={['emblem', className]}
+  viewBox="0 0 100 100"
+  width={size}
+  height={size}
+  role="img"
+  aria-label={title}
+  fill="none"
+  stroke="currentColor"
+  stroke-linecap="round"
+>
+  <g stroke-width="3.2">
+    {ticks.map((t) => <line {...t} />)}
+  </g>
+  <g stroke-width="3.6">
+    <line x1="50" y1="26" x2="50" y2="74" />
+    <line x1="41" y1="26" x2="59" y2="26" />
+    <line x1="41" y1="74" x2="59" y2="74" />
+  </g>
+  <circle cx="50" cy="50" r="6" fill="var(--accent)" stroke="var(--bg)" stroke-width="2.5" />
+</svg>

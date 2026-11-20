@@ -1,0 +1,53 @@
+---
+import '../styles/fonts.css';
+import '../styles/global.css';
+import Emblem from '../components/Emblem.astro';
+import { getFoundation } from '../lib/foundation';
+import { href, pagePath } from '../lib/url';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+const f = await getFoundation();
+const { title, description = f.motto } = Astro.props;
+const pageTitle = title ? `${title} · ${f.name}` : `${f.name} · ${f.document}`;
+const path = pagePath(Astro.url.pathname);
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{pageTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="icon" href={href("favicon.svg")} type="image/svg+xml" />
+    <link rel="alternate" type="application/json" href={href("foundation.json")} title="Founding document (JSON)" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a class="brand" href={href()} aria-label={`${f.name} home`}>
+        <Emblem size={28} />
+        <span>{f.name}</span>
+      </a>
+      <nav aria-label="Primary">
+        <a href={href("#contents")} aria-current={path === '/' ? 'page' : undefined}>Contents</a>
+        <a href={href("document/")} aria-current={path === '/document' ? 'page' : undefined}>Full document</a>
+      </nav>
+    </header>
+    <main id="main">
+      <slot />
+    </main>
+    <footer class="site-footer">
+      <p class="motto">{f.motto}</p>
+      <p class="meta">
+        {f.document} · Version {f.version} · {f.dateLabel}
+        <span aria-hidden="true">·</span>
+        <a href={href("indagorism.pdf")}>PDF</a>
+        <span aria-hidden="true">·</span>
+        <a href={href("foundation.json")}>JSON</a>
+      </p>
+    </footer>
+  </body>
+</html>

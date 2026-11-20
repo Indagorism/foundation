@@ -1,0 +1,51 @@
+---
+import Base from '../layouts/Base.astro';
+import { getFoundation, type Section } from '../lib/foundation';
+import { href } from '../lib/url';
+
+export async function getStaticPaths() {
+  const f = await getFoundation();
+  return f.sections.map((s) => ({ params: { slug: s.slug } }));
+}
+
+const f = await getFoundation();
+const index = f.sections.findIndex((s) => s.slug === Astro.params.slug);
+const section = f.sections[index] as Section | undefined;
+if (!section) return Astro.redirect(href());
+const prev = f.sections[index - 1];
+const next = f.sections[index + 1];
+const pad = (n: number) => String(n).padStart(2, '0');
+---
+<Base title={section.title} description={section.summary}>
+  <article class="section">
+    <p class="label">Section {pad(section.number)} of {pad(f.sections.length)}</p>
+    <h1>{section.title}</h1>
+
+    {section.subsections.length > 1 && (
+      <nav class="on-page" aria-label="In this section">
+        <ul>
+          {section.subsections.map((sub) => (
+            <li><a href={`#${sub.anchor}`}>{sub.title}</a></li>
+          ))}
+        </ul>
+      </nav>
+    )}
+
+    <div class="prose" set:html={section.html} />
+  </article>
+
+  <nav class="pager" aria-label="Sections">
+    {prev ? (
+      <a class="prev" href={href(`${prev.slug}/`)}>
+        <span class="label">← Previous</span>
+        <span>{prev.title}</span>
+      </a>
+    ) : <span />}
+    {next ? (
+      <a class="next" href={href(`${next.slug}/`)}>
+        <span class="label">Next →</span>
+        <span>{next.title}</span>
+      </a>
+    ) : <span />}
+  </nav>
+</Base>

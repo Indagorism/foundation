@@ -1,0 +1,160 @@
+name: Formats
+
+# The Markdown at the repository root is the founding document. This workflow
+# builds every format from it into formats/ (web, json, pdf) and commits the
+# result, so contributors only ever edit Markdown.
+#
+# - Pull request from a branch of this repository: the formats are regenerated
+#   and committed to the pull request, so reviewers see every format change.
+# - Pull request from a fork: GitHub does not let workflows push to forks, so
+#   the run summary shows what will change, and the formats are committed to
+#   main after merging.
+# - main: the formats are regenerated and committed if needed, the website is
+#   deployed to GitHub Pages, and a new version is tagged and released.
+#
+# People choose the version (00-title-page.md); this only applies it.
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: formats-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+jobs:
+  formats:
+    runs-on: ubuntu-latest
+    env:
+      ON_MAIN: ${{ github.event_name != 'pull_request' && github.ref == 'refs/heads/main' }}
+      SAME_REPO_PR: ${{ github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository }}
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          # For a branch of this repository, check out the branch itself so
+          # the regenerated formats can be pushed back to it.
+          ref: ${{ github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository && github.head_ref || '' }}
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          cache: npm
+          cache-dependency-path: tools/package-lock.json
+
+      - name: Install tools
+        working-directory: tools
+        run: |
+          npm ci
+          npx playwright install --with-deps chromium
+
+      - name: Build formats
+        working-directory: tools
+        run: npm run formats
+
+      - name: Read version
+        id: version
+        run: |
+          version=$(awk 'NR==1 && /^---$/ {f=1; next} f && /^---$/ {exit} f && /^version:/ {sub(/^version: *"?/, ""); sub(/"? *$/, ""); print}' 00-title-page.md)
+          echo "version=$version" >> "$GITHUB_OUTPUT"
+          echo "tag=v$version" >> "$GITHUB_OUTPUT"
+
+      - name: Check version is new and higher
+        id: check
+        run: |
+          tag="${{ steps.version.outputs.tag }}"
+          if git rev-parse -q --verify "refs/tags/$tag" >/dev/null; then
+            echo "$tag already exists; nothing to release."
+            echo "release=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          latest=$(git tag --list 'v*' | sort -V | tail -n1)
+          if [ -n "$latest" ] && [ "$(printf '%s\n%s\n' "$latest" "$tag" | sort -V | tail -n1)" != "$tag" ]; then
+            echo "::error file=00-title-page.md::version $tag is lower than the latest release $latest"
+            exit 1
+          fi
+          echo "$tag is new and will be released when it reaches main."
+          echo "release=true" >> "$GITHUB_OUTPUT"
+
+      - name: Check for format changes
+        id: changes
+        run: |
+          git add -A formats
+          if git diff --cached --quiet; then
+            echo "Formats are up to date."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            git diff --cached --stat
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Commit formats
+        if: steps.changes.outputs.changed == 'true' && (env.ON_MAIN == 'true' || env.SAME_REPO_PR == 'true')
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -q -m "Regenerate formats"
+          git push
+
+      - name: Summarize format changes for a fork
+        if: steps.changes.outputs.changed == 'true' && github.event_name == 'pull_request' && env.SAME_REPO_PR != 'true'
+        run: |
+          {
+            echo "### Formats"
+            echo
+            echo "This pull request changes the formats below. They are committed automatically after it is merged."
+            echo "Download the **formats** artifact from this run to see them in full."
+            echo
+            echo '```'
+            git diff --cached --stat
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Keep formats for review
+        if: github.event_name == 'pull_request'
+        uses: actions/upload-artifact@v7
+        with:
+          name: formats
+          path: formats
+
+      - name: Tag and publish release
+        if: env.ON_MAIN == 'true' && steps.check.outputs.release == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "${{ steps.version.outputs.tag }}" \
+            formats/pdf/indagorism.pdf formats/json/foundation.json \
+            --target "$(git rev-parse HEAD)" \
+            --title "Version ${{ steps.version.outputs.version }}" \
+            --generate-notes
+
+      - name: Assemble website
+        if: env.ON_MAIN == 'true'
+        run: |
+          cp -R formats/web _site
+          cp formats/json/foundation.json formats/pdf/indagorism.pdf _site/
+
+      - name: Upload website
+        if: env.ON_MAIN == 'true'
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: _site
+
+  deploy:
+    needs: formats
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5

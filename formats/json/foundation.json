@@ -1,0 +1,225 @@
+{
+  "name": "Indagorism",
+  "definition": "Indagorism (noun): from the Latin indagare, to track down and investigate, and the Greek agora, the gathering place.",
+  "document": "Founding Document",
+  "version": "1.0.0",
+  "date": "2026-11-20",
+  "motto": "Meaning is found in what is real, and measurement is how we come to know it.",
+  "sections": [
+    {
+      "number": 1,
+      "slug": "preamble",
+      "title": "Preamble",
+      "summary": "Indagorism holds that meaning is found in what is real. The natural world, the things around us, and our measurable relationship to both are sufficient ground for existence, happiness, and purpose.",
+      "source": "01-preamble.md",
+      "markdown": "# Preamble\n\nIndagorism holds that meaning is found in what is real. The natural world, the things around us, and our measurable relationship to both are sufficient ground for existence, happiness, and purpose.\n\nMany traditions rest their meaning on mythology and conjecture. Indagorism rests it on what can be observed, measured, and shared. We do not claim certainty. We claim a method: look closely, measure honestly, and change our minds when the evidence does.\n\nThis document founds Indagorism, states what its members hold in common, and describes how it may be revised.",
+      "html": "<p>Indagorism holds that meaning is found in what is real. The natural world, the things around us, and our measurable relationship to both are sufficient ground for existence, happiness, and purpose.</p>\n<p>Many traditions rest their meaning on mythology and conjecture. Indagorism rests it on what can be observed, measured, and shared. We do not claim certainty. We claim a method: look closely, measure honestly, and change our minds when the evidence does.</p>\n<p>This document founds Indagorism, states what its members hold in common, and describes how it may be revised.</p>\n",
+      "subsections": []
+    },
+    {
+      "number": 2,
+      "slug": "creed",
+      "title": "The Creed",
+      "summary": "Reality is knowable, and measurement is how we come to know it.",
+      "source": "02-creed.md",
+      "markdown": "# The Creed\n\nReality is knowable, and measurement is how we come to know it.\n\n1. **The world is real.** It exists whether or not we understand it, and it rewards attention.\n2. **Measurement is our common language.** A thing measured can be checked, compared, and shared between any two people.\n3. **Belief follows evidence.** We hold each belief only as firmly as the evidence allows, and we revise it when the evidence changes.\n4. **We belong to what we measure.** We are made of the same matter and bound by the same laws as everything around us. That kinship is a source of meaning, not a reduction of it.\n\nChanging one's mind in response to evidence is the central act of faith in Indagorism. It is honored, never punished.",
+      "html": "<p>Reality is knowable, and measurement is how we come to know it.</p>\n<ol>\n<li><strong>The world is real.</strong> It exists whether or not we understand it, and it rewards attention.</li>\n<li><strong>Measurement is our common language.</strong> A thing measured can be checked, compared, and shared between any two people.</li>\n<li><strong>Belief follows evidence.</strong> We hold each belief only as firmly as the evidence allows, and we revise it when the evidence changes.</li>\n<li><strong>We belong to what we measure.</strong> We are made of the same matter and bound by the same laws as everything around us. That kinship is a source of meaning, not a reduction of it.</li>\n</ol>\n<p>Changing one’s mind in response to evidence is the central act of faith in Indagorism. It is honored, never punished.</p>\n",
+      "subsections": []
+    },
+    {
+      "number": 3,
+      "slug": "non-theism",
+      "title": "Non-Theism",
+      "summary": "Indagorism is non-theistic. It proposes no formal God, and the universe is our guidance.",
+      "source": "03-non-theism.md",
+      "markdown": "# Non-Theism\n\nIndagorism is non-theistic. It proposes no formal God, and the universe is our guidance.\n\n## On God\n\nIndagorism neither affirms nor denies a deity. It names none, worships none, and asks no member to do either.\n\nNo member is required or encouraged to give up beliefs held outside Indagorism. What a member believes beyond this document is their own.\n\n## On origins and destiny\n\nWe do not claim to know where we come from or where we are going beyond what scientific evidence shows. Whatever lies past that evidence is a Lacuna: named, kept open, and discussed without conjecture.\n\n## On spirit\n\nIndagorism looks for wonder in the universe itself. Attention to what is real is its spiritual practice.\n\n## On the meaning of life\n\nIndagorism does not hand down a single meaning of life. Guidance in life comes from reason and from each member's own beliefs and ideals.",
+      "html": "<p>Indagorism is non-theistic. It proposes no formal God, and the universe is our guidance.</p>\n<h2 id=\"on-god\">On God</h2>\n<p>Indagorism neither affirms nor denies a deity. It names none, worships none, and asks no member to do either.</p>\n<p>No member is required or encouraged to give up beliefs held outside Indagorism. What a member believes beyond this document is their own.</p>\n<h2 id=\"on-origins-and-destiny\">On origins and destiny</h2>\n<p>We do not claim to know where we come from or where we are going beyond what scientific evidence shows. Whatever lies past that evidence is a Lacuna: named, kept open, and discussed without conjecture.</p>\n<h2 id=\"on-spirit\">On spirit</h2>\n<p>Indagorism looks for wonder in the universe itself. Attention to what is real is its spiritual practice.</p>\n<h2 id=\"on-the-meaning-of-life\">On the meaning of life</h2>\n<p>Indagorism does not hand down a single meaning of life. Guidance in life comes from reason and from each member’s own beliefs and ideals.</p>\n",
+      "subsections": [
+        {
+          "title": "On God",
+          "anchor": "on-god",
+          "markdown": "Indagorism neither affirms nor denies a deity. It names none, worships none, and asks no member to do either.\n\nNo member is required or encouraged to give up beliefs held outside Indagorism. What a member believes beyond this document is their own."
+        },
+        {
+          "title": "On origins and destiny",
+          "anchor": "on-origins-and-destiny",
+          "markdown": "We do not claim to know where we come from or where we are going beyond what scientific evidence shows. Whatever lies past that evidence is a Lacuna: named, kept open, and discussed without conjecture."
+        },
+        {
+          "title": "On spirit",
+          "anchor": "on-spirit",
+          "markdown": "Indagorism looks for wonder in the universe itself. Attention to what is real is its spiritual practice."
+        },
+        {
+          "title": "On the meaning of life",
+          "anchor": "on-the-meaning-of-life",
+          "markdown": "Indagorism does not hand down a single meaning of life. Guidance in life comes from reason and from each member's own beliefs and ideals."
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "slug": "tenets",
+      "title": "The Tenets",
+      "summary": "Seven tenets turn the creed into daily practice.",
+      "source": "04-tenets.md",
+      "markdown": "# The Tenets\n\nSeven tenets turn the creed into daily practice.\n\n## 1. The Tenet of Ten\n\nIndagorists measure in the metric system and count in base ten, because a single shared standard unites people.\n\nBase ten is the foundation of the number system used worldwide in mathematics, and the metric system extends it to length, mass, volume, and time. Together they form the most unified convention humanity has. A measurement made in one place can be understood in every other.\n\nTen is also tangible. Our fingers and toes give every child a physical basis for counting, so the youngest members can understand the system with their own hands and build upon it.\n\nUnits outside base ten, such as the 24-hour day and the 360-degree circle, are accepted. Wherever a choice exists, Indagorists favor the global standard.\n\nWe honor ten as a convention, not as a cosmic truth. Its value lies in what it lets us share.\n\n## 2. Observation\n\nLook before concluding. Attention to the world is a discipline, practiced daily.\n\n## 3. Calibration\n\nCheck beliefs against evidence on a regular schedule, the way an instrument is checked against a standard.\n\n## 4. Honesty in measure\n\nReport what was found, including what was inconvenient. Never round a result toward what we hoped for.\n\n## 5. Uncertainty\n\nEvery measurement carries an error bar. State what is not known as plainly as what is.\n\nQuestions that science has not yet answered are called **Lacunas**. A Lacuna is not filled with conjecture. It is named, kept open, and discussed like any other topic.\n\n## 6. Kinship\n\nPeople, other living things, and the physical world share one origin and one set of laws. Treat them accordingly.\n\n## 7. Teaching\n\nPass the method on. A member who understands something owes an explanation to one who does not, in terms a child can follow.",
+      "html": "<p>Seven tenets turn the creed into daily practice.</p>\n<h2 id=\"1-the-tenet-of-ten\">1. The Tenet of Ten</h2>\n<p>Indagorists measure in the metric system and count in base ten, because a single shared standard unites people.</p>\n<p>Base ten is the foundation of the number system used worldwide in mathematics, and the metric system extends it to length, mass, volume, and time. Together they form the most unified convention humanity has. A measurement made in one place can be understood in every other.</p>\n<p>Ten is also tangible. Our fingers and toes give every child a physical basis for counting, so the youngest members can understand the system with their own hands and build upon it.</p>\n<p>Units outside base ten, such as the 24-hour day and the 360-degree circle, are accepted. Wherever a choice exists, Indagorists favor the global standard.</p>\n<p>We honor ten as a convention, not as a cosmic truth. Its value lies in what it lets us share.</p>\n<h2 id=\"2-observation\">2. Observation</h2>\n<p>Look before concluding. Attention to the world is a discipline, practiced daily.</p>\n<h2 id=\"3-calibration\">3. Calibration</h2>\n<p>Check beliefs against evidence on a regular schedule, the way an instrument is checked against a standard.</p>\n<h2 id=\"4-honesty-in-measure\">4. Honesty in measure</h2>\n<p>Report what was found, including what was inconvenient. Never round a result toward what we hoped for.</p>\n<h2 id=\"5-uncertainty\">5. Uncertainty</h2>\n<p>Every measurement carries an error bar. State what is not known as plainly as what is.</p>\n<p>Questions that science has not yet answered are called <strong>Lacunas</strong>. A Lacuna is not filled with conjecture. It is named, kept open, and discussed like any other topic.</p>\n<h2 id=\"6-kinship\">6. Kinship</h2>\n<p>People, other living things, and the physical world share one origin and one set of laws. Treat them accordingly.</p>\n<h2 id=\"7-teaching\">7. Teaching</h2>\n<p>Pass the method on. A member who understands something owes an explanation to one who does not, in terms a child can follow.</p>\n",
+      "subsections": [
+        {
+          "title": "1. The Tenet of Ten",
+          "anchor": "1-the-tenet-of-ten",
+          "markdown": "Indagorists measure in the metric system and count in base ten, because a single shared standard unites people.\n\nBase ten is the foundation of the number system used worldwide in mathematics, and the metric system extends it to length, mass, volume, and time. Together they form the most unified convention humanity has. A measurement made in one place can be understood in every other.\n\nTen is also tangible. Our fingers and toes give every child a physical basis for counting, so the youngest members can understand the system with their own hands and build upon it.\n\nUnits outside base ten, such as the 24-hour day and the 360-degree circle, are accepted. Wherever a choice exists, Indagorists favor the global standard.\n\nWe honor ten as a convention, not as a cosmic truth. Its value lies in what it lets us share."
+        },
+        {
+          "title": "2. Observation",
+          "anchor": "2-observation",
+          "markdown": "Look before concluding. Attention to the world is a discipline, practiced daily."
+        },
+        {
+          "title": "3. Calibration",
+          "anchor": "3-calibration",
+          "markdown": "Check beliefs against evidence on a regular schedule, the way an instrument is checked against a standard."
+        },
+        {
+          "title": "4. Honesty in measure",
+          "anchor": "4-honesty-in-measure",
+          "markdown": "Report what was found, including what was inconvenient. Never round a result toward what we hoped for."
+        },
+        {
+          "title": "5. Uncertainty",
+          "anchor": "5-uncertainty",
+          "markdown": "Every measurement carries an error bar. State what is not known as plainly as what is.\n\nQuestions that science has not yet answered are called **Lacunas**. A Lacuna is not filled with conjecture. It is named, kept open, and discussed like any other topic."
+        },
+        {
+          "title": "6. Kinship",
+          "anchor": "6-kinship",
+          "markdown": "People, other living things, and the physical world share one origin and one set of laws. Treat them accordingly."
+        },
+        {
+          "title": "7. Teaching",
+          "anchor": "7-teaching",
+          "markdown": "Pass the method on. A member who understands something owes an explanation to one who does not, in terms a child can follow."
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "slug": "ethics",
+      "title": "Ethics",
+      "summary": "Indagorism chooses three moral commitments: wellbeing, honesty, and stewardship.",
+      "source": "05-ethics.md",
+      "markdown": "# Ethics\n\nIndagorism chooses three moral commitments: wellbeing, honesty, and stewardship.\n\nScience describes what is. It does not, by itself, say what we ought to do. These commitments are therefore chosen openly rather than claimed as discoveries.\n\n- **Wellbeing.** Actions are judged by their effect on the flourishing of people and other living things. Where effects can be measured, we measure them.\n- **Honesty.** We do not deceive others or ourselves. This applies to data, to relationships, and to this document.\n- **Stewardship.** The natural world is the ground of our meaning. We leave it in better condition than we found it.\n\nWhen these commitments conflict, members reason it through together, in the open, and record how they decided.",
+      "html": "<p>Indagorism chooses three moral commitments: wellbeing, honesty, and stewardship.</p>\n<p>Science describes what is. It does not, by itself, say what we ought to do. These commitments are therefore chosen openly rather than claimed as discoveries.</p>\n<ul>\n<li><strong>Wellbeing.</strong> Actions are judged by their effect on the flourishing of people and other living things. Where effects can be measured, we measure them.</li>\n<li><strong>Honesty.</strong> We do not deceive others or ourselves. This applies to data, to relationships, and to this document.</li>\n<li><strong>Stewardship.</strong> The natural world is the ground of our meaning. We leave it in better condition than we found it.</li>\n</ul>\n<p>When these commitments conflict, members reason it through together, in the open, and record how they decided.</p>\n",
+      "subsections": []
+    },
+    {
+      "number": 6,
+      "slug": "acceptance-freedom-and-individual-rights",
+      "title": "Acceptance, Freedom, and Individual Rights",
+      "summary": "Indagorism is founded on freedom of thought and on every person’s right to be fully human, free from the interference of others.",
+      "source": "06-acceptance-freedom-and-individual-rights.md",
+      "markdown": "# Acceptance, Freedom, and Individual Rights\n\nIndagorism is founded on freedom of thought and on every person's right to be fully human, free from the interference of others.\n\n- **Acceptance.** Every person is accepted as they are. No one is asked to become someone else in order to belong.\n- **Freedom of thought.** Each person is free to think, question, believe, and change their mind. No idea is forbidden from examination, and no person is punished for holding one.\n- **Individuality.** Individuality is critical. Each life is a single, unrepeatable instance, and its differences are to be protected rather than corrected.\n- **The best possible life.** The ability to lead the best possible life should be guaranteed universally, to every person and not only to members.\n\n## No harm\n\n**Indagorism will not support or tolerate actions that harm others in any way.**\n\nOne person's freedom does not extend to taking the same freedom from another.\n\n## Where we stand\n\nWe support these rights for our members, in our communities, across our regions, and globally. We support those who live by this purpose and those who serve it, whether or not they are Indagorists.",
+      "html": "<p>Indagorism is founded on freedom of thought and on every person’s right to be fully human, free from the interference of others.</p>\n<ul>\n<li><strong>Acceptance.</strong> Every person is accepted as they are. No one is asked to become someone else in order to belong.</li>\n<li><strong>Freedom of thought.</strong> Each person is free to think, question, believe, and change their mind. No idea is forbidden from examination, and no person is punished for holding one.</li>\n<li><strong>Individuality.</strong> Individuality is critical. Each life is a single, unrepeatable instance, and its differences are to be protected rather than corrected.</li>\n<li><strong>The best possible life.</strong> The ability to lead the best possible life should be guaranteed universally, to every person and not only to members.</li>\n</ul>\n<h2 id=\"no-harm\">No harm</h2>\n<p><strong>Indagorism will not support or tolerate actions that harm others in any way.</strong></p>\n<p>One person’s freedom does not extend to taking the same freedom from another.</p>\n<h2 id=\"where-we-stand\">Where we stand</h2>\n<p>We support these rights for our members, in our communities, across our regions, and globally. We support those who live by this purpose and those who serve it, whether or not they are Indagorists.</p>\n",
+      "subsections": [
+        {
+          "title": "No harm",
+          "anchor": "no-harm",
+          "markdown": "**Indagorism will not support or tolerate actions that harm others in any way.**\n\nOne person's freedom does not extend to taking the same freedom from another."
+        },
+        {
+          "title": "Where we stand",
+          "anchor": "where-we-stand",
+          "markdown": "We support these rights for our members, in our communities, across our regions, and globally. We support those who live by this purpose and those who serve it, whether or not they are Indagorists."
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "slug": "calendar",
+      "title": "The Calendar",
+      "summary": "The Indagorist year is marked by six astronomical observances and three days of measure.",
+      "source": "07-calendar.md",
+      "markdown": "# The Calendar\n\nThe Indagorist year is marked by six astronomical observances and three days of measure.\n\nAstronomical dates shift by a day or so each year and are set from published almanac data.\n\n| Observance | Approximate date | What it marks |\n| --- | --- | --- |\n| Perihelion | Early January | Earth's closest approach to the Sun |\n| Pi Day | March 14 | Mathematics as the shared language of measure |\n| **March Equinox** | Around March 20 | Day and night in balance; a time of beginnings |\n| Calibration Day | May 20 | The signing of the Metre Convention in 1875; the annual calibration |\n| **June Solstice** | Around June 21 | The Sun's highest point; a celebration of light and growth |\n| Aphelion | Early July | Earth's farthest point from the Sun |\n| **September Equinox** | Around September 22 | Balance again; harvest and gratitude |\n| Mole Day | October 23 | Chemistry and the scale of the very small |\n| **December Solstice** | Around December 21 | The longest night; remembrance and the return of light |\n\nThe two solstices and two equinoxes are the high holidays. Each is observed outdoors where possible, with a direct measurement such as a shadow length at local noon, recorded and compared with prior years.",
+      "html": "<p>The Indagorist year is marked by six astronomical observances and three days of measure.</p>\n<p>Astronomical dates shift by a day or so each year and are set from published almanac data.</p>\n<table>\n<thead>\n<tr>\n<th>Observance</th>\n<th>Approximate date</th>\n<th>What it marks</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Perihelion</td>\n<td>Early January</td>\n<td>Earth’s closest approach to the Sun</td>\n</tr>\n<tr>\n<td>Pi Day</td>\n<td>March 14</td>\n<td>Mathematics as the shared language of measure</td>\n</tr>\n<tr>\n<td><strong>March Equinox</strong></td>\n<td>Around March 20</td>\n<td>Day and night in balance; a time of beginnings</td>\n</tr>\n<tr>\n<td>Calibration Day</td>\n<td>May 20</td>\n<td>The signing of the Metre Convention in 1875; the annual calibration</td>\n</tr>\n<tr>\n<td><strong>June Solstice</strong></td>\n<td>Around June 21</td>\n<td>The Sun’s highest point; a celebration of light and growth</td>\n</tr>\n<tr>\n<td>Aphelion</td>\n<td>Early July</td>\n<td>Earth’s farthest point from the Sun</td>\n</tr>\n<tr>\n<td><strong>September Equinox</strong></td>\n<td>Around September 22</td>\n<td>Balance again; harvest and gratitude</td>\n</tr>\n<tr>\n<td>Mole Day</td>\n<td>October 23</td>\n<td>Chemistry and the scale of the very small</td>\n</tr>\n<tr>\n<td><strong>December Solstice</strong></td>\n<td>Around December 21</td>\n<td>The longest night; remembrance and the return of light</td>\n</tr>\n</tbody>\n</table>\n<p>The two solstices and two equinoxes are the high holidays. Each is observed outdoors where possible, with a direct measurement such as a shadow length at local noon, recorded and compared with prior years.</p>\n",
+      "subsections": []
+    },
+    {
+      "number": 8,
+      "slug": "rituals-and-practices",
+      "title": "Rituals and Practices",
+      "summary": "Indagorist rituals mark life’s passages with facts that are both true and moving.",
+      "source": "08-rituals-and-practices.md",
+      "markdown": "# Rituals and Practices\n\nIndagorist rituals mark life's passages with facts that are both true and moving.\n\n## Rites of passage\n\n- **Naming.** A new child is welcomed with an account of where their atoms came from: forged in stars, carried by the Earth, now gathered into one person.\n- **First Count.** A young member counts to ten on their fingers before the community and receives their first measuring instrument.\n- **Calibration.** Once a year, on Calibration Day, each member names one belief they changed and the evidence that changed it.\n- **Union.** Two people commit to each other with vows they write themselves, witnessed and recorded.\n- **Remembrance.** The dead are honored with the fact that nothing of them is lost. Their matter and energy remain in the world, and their influence remains in us.\n\n## Regular practices\n\n- **Observation.** A daily period of attention to the natural world: the sky, the weather, a plant, a bird. Many keep a field journal.\n- **Gathering.** Stations gather for educational sessions and open-forum discussions, for observances and holidays, and as needed to address world issues. There is no fixed schedule.\n- **Sky nights.** The community gathers to watch the night sky at each new moon or notable event.\n- **Service.** Members contribute to citizen science and stewardship: bird counts, water testing, habitat work, tutoring.",
+      "html": "<p>Indagorist rituals mark life’s passages with facts that are both true and moving.</p>\n<h2 id=\"rites-of-passage\">Rites of passage</h2>\n<ul>\n<li><strong>Naming.</strong> A new child is welcomed with an account of where their atoms came from: forged in stars, carried by the Earth, now gathered into one person.</li>\n<li><strong>First Count.</strong> A young member counts to ten on their fingers before the community and receives their first measuring instrument.</li>\n<li><strong>Calibration.</strong> Once a year, on Calibration Day, each member names one belief they changed and the evidence that changed it.</li>\n<li><strong>Union.</strong> Two people commit to each other with vows they write themselves, witnessed and recorded.</li>\n<li><strong>Remembrance.</strong> The dead are honored with the fact that nothing of them is lost. Their matter and energy remain in the world, and their influence remains in us.</li>\n</ul>\n<h2 id=\"regular-practices\">Regular practices</h2>\n<ul>\n<li><strong>Observation.</strong> A daily period of attention to the natural world: the sky, the weather, a plant, a bird. Many keep a field journal.</li>\n<li><strong>Gathering.</strong> Stations gather for educational sessions and open-forum discussions, for observances and holidays, and as needed to address world issues. There is no fixed schedule.</li>\n<li><strong>Sky nights.</strong> The community gathers to watch the night sky at each new moon or notable event.</li>\n<li><strong>Service.</strong> Members contribute to citizen science and stewardship: bird counts, water testing, habitat work, tutoring.</li>\n</ul>\n",
+      "subsections": [
+        {
+          "title": "Rites of passage",
+          "anchor": "rites-of-passage",
+          "markdown": "- **Naming.** A new child is welcomed with an account of where their atoms came from: forged in stars, carried by the Earth, now gathered into one person.\n- **First Count.** A young member counts to ten on their fingers before the community and receives their first measuring instrument.\n- **Calibration.** Once a year, on Calibration Day, each member names one belief they changed and the evidence that changed it.\n- **Union.** Two people commit to each other with vows they write themselves, witnessed and recorded.\n- **Remembrance.** The dead are honored with the fact that nothing of them is lost. Their matter and energy remain in the world, and their influence remains in us."
+        },
+        {
+          "title": "Regular practices",
+          "anchor": "regular-practices",
+          "markdown": "- **Observation.** A daily period of attention to the natural world: the sky, the weather, a plant, a bird. Many keep a field journal.\n- **Gathering.** Stations gather for educational sessions and open-forum discussions, for observances and holidays, and as needed to address world issues. There is no fixed schedule.\n- **Sky nights.** The community gathers to watch the night sky at each new moon or notable event.\n- **Service.** Members contribute to citizen science and stewardship: bird counts, water testing, habitat work, tutoring."
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "slug": "collective",
+      "title": "The Collective",
+      "summary": "Indagorism is a collective. It belongs to its members together, and no person, office, or group owns it, speaks for it on their own authority, or decides for it alone.",
+      "source": "09-collective.md",
+      "markdown": "# The Collective\n\nIndagorism is a collective. It belongs to its members together, and no person, office, or group owns it, speaks for it on their own authority, or decides for it alone.\n\n## Roles facilitate\n\nEvery role in Indagorism exists to facilitate. Those who hold a role help unify the members, carry the purpose forward, and support the people they serve.\n\nA role carries responsibility, not power. No one who holds a role may dictate to members or make a decision on their behalf. Roles are held for a time, open to anyone, and answerable to the members.\n\n## Decisions are shared\n\nDecisions that affect members are made with them, in the open. Anyone affected may take part.\n\nAgreement will rarely be unanimous. That is human, and it is not a failure. In every matter, the aim is common ground: a decision that everyone can accept and live with, even when it is not each member's first choice.\n\n- **Every view is heard** before a decision is made.\n- **Disagreement is stated plainly** and recorded alongside the decision.\n- **No side overrules another.** Where common ground has not yet been found, members keep reasoning together until it is.\n- **Decisions stay open to revision** when evidence or circumstances change.\n\n## No one decides alone\n\nNo member, role, or group may decide alone for Indagorism. A decision made by one on behalf of all is not a decision of Indagorism.",
+      "html": "<p>Indagorism is a collective. It belongs to its members together, and no person, office, or group owns it, speaks for it on their own authority, or decides for it alone.</p>\n<h2 id=\"roles-facilitate\">Roles facilitate</h2>\n<p>Every role in Indagorism exists to facilitate. Those who hold a role help unify the members, carry the purpose forward, and support the people they serve.</p>\n<p>A role carries responsibility, not power. No one who holds a role may dictate to members or make a decision on their behalf. Roles are held for a time, open to anyone, and answerable to the members.</p>\n<h2 id=\"decisions-are-shared\">Decisions are shared</h2>\n<p>Decisions that affect members are made with them, in the open. Anyone affected may take part.</p>\n<p>Agreement will rarely be unanimous. That is human, and it is not a failure. In every matter, the aim is common ground: a decision that everyone can accept and live with, even when it is not each member’s first choice.</p>\n<ul>\n<li><strong>Every view is heard</strong> before a decision is made.</li>\n<li><strong>Disagreement is stated plainly</strong> and recorded alongside the decision.</li>\n<li><strong>No side overrules another.</strong> Where common ground has not yet been found, members keep reasoning together until it is.</li>\n<li><strong>Decisions stay open to revision</strong> when evidence or circumstances change.</li>\n</ul>\n<h2 id=\"no-one-decides-alone\">No one decides alone</h2>\n<p>No member, role, or group may decide alone for Indagorism. A decision made by one on behalf of all is not a decision of Indagorism.</p>\n",
+      "subsections": [
+        {
+          "title": "Roles facilitate",
+          "anchor": "roles-facilitate",
+          "markdown": "Every role in Indagorism exists to facilitate. Those who hold a role help unify the members, carry the purpose forward, and support the people they serve.\n\nA role carries responsibility, not power. No one who holds a role may dictate to members or make a decision on their behalf. Roles are held for a time, open to anyone, and answerable to the members."
+        },
+        {
+          "title": "Decisions are shared",
+          "anchor": "decisions-are-shared",
+          "markdown": "Decisions that affect members are made with them, in the open. Anyone affected may take part.\n\nAgreement will rarely be unanimous. That is human, and it is not a failure. In every matter, the aim is common ground: a decision that everyone can accept and live with, even when it is not each member's first choice.\n\n- **Every view is heard** before a decision is made.\n- **Disagreement is stated plainly** and recorded alongside the decision.\n- **No side overrules another.** Where common ground has not yet been found, members keep reasoning together until it is.\n- **Decisions stay open to revision** when evidence or circumstances change."
+        },
+        {
+          "title": "No one decides alone",
+          "anchor": "no-one-decides-alone",
+          "markdown": "No member, role, or group may decide alone for Indagorism. A decision made by one on behalf of all is not a decision of Indagorism."
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "slug": "structure",
+      "title": "Structure",
+      "summary": "Indagorism has no prophets and no clergy. Authority rests in evidence and in the review of peers. Every role below exists to facilitate, as set out in The Collective.",
+      "source": "10-structure.md",
+      "markdown": "# Structure\n\nIndagorism has no prophets and no clergy. Authority rests in evidence and in the review of peers. Every role below exists to facilitate, as set out in The Collective.\n\n- **Members** are called Indagorists. Anyone who accepts the creed may join. Membership is open-ended. Its only commitment is acceptance of these ideals and open-mindedness toward the thoughts of others, inside and outside Indagorism. No one is asked to renounce another tradition.\n- **Stations** are local communities. A station forms when a handful of Indagorists agree to gather.\n- **Calibrators** are facilitators, one for every ten members. They serve terms of up to ten months, set by their availability, and may be re-elected by the members they serve. They organize gatherings and lead rites. They hold no special access to truth.\n- **The Council of Review** is made up of calibrators from the stations. It keeps the record of this document and facilitates the review of proposed amendments, as set out in The Living Canon.\n- **The Catalyst** is one Indagorist appointed by the calibrators to represent Indagorism. The Catalyst speaks for the Indagorists, conveying what members have decided rather than a view of their own, and helps guide the Council of Review in its collaboration and processes. Like a catalyst in chemistry, they help the work along without deciding its outcome. The calibrators set the Catalyst's term and may reappoint or replace them.\n- **Founders** are the Indagorists responsible for founding Indagorism. Together they convene the first station and the first Council of Review. Where the law requires named people to act for Indagorism, such as to sign on its behalf, the Founders serve in that role until members name others. They sign only what members have decided, and founding gives them no other authority.\n\nNo member, calibrator, Catalyst, founder, or council is exempt from question. A claim stands on its evidence, whoever makes it.",
+      "html": "<p>Indagorism has no prophets and no clergy. Authority rests in evidence and in the review of peers. Every role below exists to facilitate, as set out in The Collective.</p>\n<ul>\n<li><strong>Members</strong> are called Indagorists. Anyone who accepts the creed may join. Membership is open-ended. Its only commitment is acceptance of these ideals and open-mindedness toward the thoughts of others, inside and outside Indagorism. No one is asked to renounce another tradition.</li>\n<li><strong>Stations</strong> are local communities. A station forms when a handful of Indagorists agree to gather.</li>\n<li><strong>Calibrators</strong> are facilitators, one for every ten members. They serve terms of up to ten months, set by their availability, and may be re-elected by the members they serve. They organize gatherings and lead rites. They hold no special access to truth.</li>\n<li><strong>The Council of Review</strong> is made up of calibrators from the stations. It keeps the record of this document and facilitates the review of proposed amendments, as set out in The Living Canon.</li>\n<li><strong>The Catalyst</strong> is one Indagorist appointed by the calibrators to represent Indagorism. The Catalyst speaks for the Indagorists, conveying what members have decided rather than a view of their own, and helps guide the Council of Review in its collaboration and processes. Like a catalyst in chemistry, they help the work along without deciding its outcome. The calibrators set the Catalyst’s term and may reappoint or replace them.</li>\n<li><strong>Founders</strong> are the Indagorists responsible for founding Indagorism. Together they convene the first station and the first Council of Review. Where the law requires named people to act for Indagorism, such as to sign on its behalf, the Founders serve in that role until members name others. They sign only what members have decided, and founding gives them no other authority.</li>\n</ul>\n<p>No member, calibrator, Catalyst, founder, or council is exempt from question. A claim stands on its evidence, whoever makes it.</p>\n",
+      "subsections": []
+    },
+    {
+      "number": 11,
+      "slug": "living-canon",
+      "title": "The Living Canon",
+      "summary": "This document is expected to change. Its current version is shown on its title page.",
+      "source": "11-living-canon.md",
+      "markdown": "# The Living Canon\n\nThis document is expected to change. Its current version is shown on its title page.\n\n1. Any Indagorist may propose an amendment in writing, with the reasoning and evidence for it.\n2. The proposal is open to all members for comment and discussion. Reviews are convened as needed and take as long as they need.\n3. The Council of Review facilitates the review. It gathers every view, helps members find common ground, and records any disagreement. It does not decide on the members' behalf.\n4. A proposal is adopted, revised, or set aside when members reach common ground on it. The Council publishes the outcome and the reasoning behind it.\n5. Adopted changes produce a new numbered version. Every prior version is kept on record.\n\nThe creed may be amended like any other part. A canon that cannot be corrected would contradict it.",
+      "html": "<p>This document is expected to change. Its current version is shown on its title page.</p>\n<ol>\n<li>Any Indagorist may propose an amendment in writing, with the reasoning and evidence for it.</li>\n<li>The proposal is open to all members for comment and discussion. Reviews are convened as needed and take as long as they need.</li>\n<li>The Council of Review facilitates the review. It gathers every view, helps members find common ground, and records any disagreement. It does not decide on the members’ behalf.</li>\n<li>A proposal is adopted, revised, or set aside when members reach common ground on it. The Council publishes the outcome and the reasoning behind it.</li>\n<li>Adopted changes produce a new numbered version. Every prior version is kept on record.</li>\n</ol>\n<p>The creed may be amended like any other part. A canon that cannot be corrected would contradict it.</p>\n",
+      "subsections": []
+    },
+    {
+      "number": 12,
+      "slug": "emblem",
+      "title": "The Emblem",
+      "summary": "The emblem of Indagorism is an error bar set inside a ring of ten marks.",
+      "source": "12-emblem.md",
+      "markdown": "# The Emblem\n\nThe emblem of Indagorism is an error bar set inside a ring of ten marks.\n\n- **The point** at the center is a single measurement.\n- **The bar and its two caps** are the uncertainty that every honest measurement admits. Together they also form the letter I.\n- **The ring of ten marks** is the Tenet of Ten, drawn as the dial of an instrument.\n\nA child should be able to draw it from memory.",
+      "html": "<p>The emblem of Indagorism is an error bar set inside a ring of ten marks.</p>\n<ul>\n<li><strong>The point</strong> at the center is a single measurement.</li>\n<li><strong>The bar and its two caps</strong> are the uncertainty that every honest measurement admits. Together they also form the letter I.</li>\n<li><strong>The ring of ten marks</strong> is the Tenet of Ten, drawn as the dial of an instrument.</li>\n</ul>\n<p>A child should be able to draw it from memory.</p>\n",
+      "subsections": []
+    }
+  ]
+}

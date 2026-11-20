@@ -1,0 +1,41 @@
+---
+import Base from '../../layouts/Base.astro';
+import Emblem from '../../components/Emblem.astro';
+import { getFoundation } from '../../lib/foundation';
+import { href } from '../../lib/url';
+
+const f = await getFoundation();
+const pad = (n: number) => String(n).padStart(2, '0');
+---
+<Base title={f.document}>
+  <header class="doc-title">
+    <Emblem size={72} />
+    <h1>{f.name}</h1>
+    <p class="definition" set:html={f.definitionHtml} />
+    <p class="edition">
+      <span>{f.document}</span>
+      <span>Version {f.version}</span>
+      <span>{f.dateLabel}</span>
+    </p>
+    <p class="hero-motto">{f.motto}</p>
+  </header>
+
+  <nav class="doc-contents" aria-labelledby="doc-contents-title">
+    <h2 id="doc-contents-title" class="label">Contents</h2>
+    <ol>
+      {f.sections.map((s) => (
+        <li><a href={`#${s.slug}`}><span class="num">{pad(s.number)}</span>{s.title}</a></li>
+      ))}
+    </ol>
+  </nav>
+
+  {f.sections.map((s) => (
+    <article class="section doc-section" id={s.slug}>
+      <p class="label">
+        <a href={href(`${s.slug}/`)}>Section {pad(s.number)}</a>
+      </p>
+      <h2 class="doc-section-title">{s.title}</h2>
+      <div class="prose" set:html={s.html} />
+    </article>
+  ))}
+</Base>
